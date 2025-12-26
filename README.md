@@ -1,9 +1,5 @@
 # 启动页适配
 
-A new Flutter project.
-
-## Getting Started
-
 flutter create --org com.hq.app  --platforms=android,ios  .
 
 # 效果
