@@ -1,4 +1,4 @@
-# hq_splashscreen_adapt
+# 启动页适配
 
 A new Flutter project.
 
@@ -6,7 +6,15 @@ A new Flutter project.
 
 flutter create --org com.hq.app  --platforms=android,ios  .
 
-# iOS 启动页配置
+# 效果
+Android 启动页效果
+![android_preview.gif](./preview/android_preview.gif)
+
+iOS 启动页效果
+![ios_preview.gif](./preview/ios_preview.gif)
+
+
+
 
 
 
@@ -291,6 +299,31 @@ class SplashActivity : AppCompatActivity() {
 
 ```
 
+# iOS 启动页配置
+
+##  准备资源
+  * 启动页背景图片：v_app_launch_bg
+  * 启动页logo图片：v_app_launch_logo
+
+## 将资源添加到项目中
+  * 将 `v_app_launch_bg` 添加到 `Assets.xcassets` 中
+
+  * 将 `v_app_launch_logo` 添加到 `Assets.xcassets` 中
+
+  * 在 `LaunchScreen.storyboard` 中添加两个 `Image View`,一个用于背景，一个用于logo，分别命名为 `Background Image View` 和 `Logo Image View`
+    
+  * 将 `v_app_launch_bg` 绑定到 `LaunchScreen.storyboard` 中的 `Background Image View`
+  * 将 `v_app_launch_logo` 绑定到 `LaunchScreen.storyboard` 中的 `Logo Image View`
+
+  * 设置 `Background Image View` 的 `Content Mode` 为 `ScaleAspectFill`
+  * 设置 `Logo Image View` 的 `Content Mode` 为 `ScaleAspectFit`
+
+  * 分别为 `Background Image View` 和 `Logo Image View` 添加 `Constraints` 约束，具体见Demo项目
+ 
+
+
 # 注意：
 
 注意相关的资源名称的修改和自己的项目中资源名称修成一致的，包括配置中的资源名称
+
+
