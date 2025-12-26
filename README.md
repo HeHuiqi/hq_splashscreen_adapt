@@ -4,9 +4,11 @@ flutter create --org com.hq.app  --platforms=android,ios  .
 
 # 效果
 Android 启动页效果
+
 <img src="./preview/android_preview.gif" alt="android_preview.png" width="200" />
 
 iOS 启动页效果
+
 <img src="./preview/ios_preview.gif" alt="ios_preview.png" width="200" />
 
 
