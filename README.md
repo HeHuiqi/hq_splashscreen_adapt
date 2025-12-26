@@ -4,10 +4,10 @@ flutter create --org com.hq.app  --platforms=android,ios  .
 
 # 效果
 Android 启动页效果
-![android_preview.gif](./preview/android_preview.gif)
+<img src="./preview/android_preview.gif" alt="android_preview.png" style="zoom:18%;" />
 
 iOS 启动页效果
-![ios_preview.gif](./preview/ios_preview.gif)
+<img src="./preview/ios_preview.gif" alt="ios_preview.png" style="zoom:50%;" />
 
 
 
