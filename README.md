@@ -62,9 +62,12 @@ iOS 启动页效果
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- 最关键设置，让window透明，其他可选       -->
+        <item name="android:windowIsTranslucent">true</item>
+
         <item name="colorPrimary">@android:color/transparent</item>
         <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
@@ -75,6 +78,7 @@ iOS 启动页效果
         <item name="android:windowAnimationStyle">@null</item>
     </style>
 </resources>
+
 
 ```
 ## 代码实现
